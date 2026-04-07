@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felinos da Cuesta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="assets/logo.png" alt="Logo Felinos da Cuesta" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#about">Quem Somos</a></li>
+        <li><a href="#actions">Nossas Ações</a></li>
+        <li><a href="#species">Os Felinos</a></li>
+        <li><a href="#cta">Como Ajudar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="assets/pexels-regan-dsouza-1315522347-30460402.jpg" alt="Gato-do-mato-pequeno" class="hero-img">
+    <div class="hero-text">
+      <h1>Conservando os Felinos Silvestres da Cuesta Paulista</h1>
+      <button onclick="scrollToActions()">Conheça Nossas Ações</button>
+    </div>
+  </section>
+
+  <!-- Quem Somos -->
+  <section class="about" id="about">
+    <h2>Quem Somos</h2>
+    <p>
+      O Projeto Felinos da Cuesta é uma iniciativa da FCA/UNESP focada em conservação,
+      ciência e coexistência humano-fauna. Atuamos para proteger felinos silvestres
+      e sensibilizar a população sobre a importância da fauna na Cuesta Paulista.
+    </p>
+    <img src="assets/0,,11974060,00.jpg" alt="Mapa da Cuesta" class="mapa-cuesta">
+  </section>
+
+  <!-- Pilares -->
+  <section class="pilares" id="actions">
+    <h2>Os Pilares do Projeto</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="assets/Design sem nome (2).png" alt="Levantamento e Monitoramento">
+        <h3>Levantamento e Monitoramento</h3>
+        <a href="#">Saiba Mais</a>
+      </div>
+      <div class="card">
+        <img src="assets/Design sem nome (1).png" alt="Educação Ambiental">
+        <h3>Educação Ambiental</h3>
+        <a href="#">Saiba Mais</a>
+      </div>
+      <div class="card">
+        <img src="assets/Design sem nome (3).png" alt="Coexistência humano-fauna">
+        <h3>Coexistência humano-fauna</h3>
+        <a href="#">Saiba Mais</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Espécies (Carrossel) -->
+  <section class="species" id="species">
+    <h2>Conheça as Espécies</h2>
+    <div class="carousel-container">
+      <button class="prev" onclick="scrollCarousel(-1)">&#10094;</button>
+      <div class="carousel">
+        <div class="species-card">
+          <img src="assets/download (1).jpg" alt="Onça-parda">
+          <div class="species-info">
+            <h3>Onça-parda</h3>
+            <p>Status: Vulnerável</p>
+          </div>
+        </div>
+        <div class="species-card">
+          <img src="assets/download (2).jpg" alt="Jaguatirica">
+          <div class="species-info">
+            <h3>Jaguatirica</h3>
+            <p>Status: Vulnerável</p>
+          </div>
+        </div>
+        <div class="species-card">
+          <img src="assets/Meet the jaguarundi.jpg" alt="Jaguarundi">
+          <div class="species-info">
+            <h3>Jaguarundi</h3>
+            <p>Status: Pouco Preocupante</p>
+          </div>
+        </div>
+        <div class="species-card">
+          <img src="assets/download (3).jpg" alt="Gato-maracajá">
+          <div class="species-info">
+            <h3>Gato-maracajá</h3>
+            <p>Status: Vulnerável</p>
+          </div>
+        </div>
+        <div class="species-card">
+          <img src="assets/The Rusty Spotted Cat_ World's Smallest Feline Predator.jpg" alt="Gato-do-mato-pequeno">
+          <div class="species-info">
+            <h3>Gato-do-mato-pequeno</h3>
+            <p>Status: Vulnerável</p>
+          </div>
+        </div>
+      </div>
+      <button class="next" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="cta">
+    <h2>Como Ajudar</h2>
+    <div class="options">
+      <div class="option"><h3>Pessoa Física</h3><p>Doe via PIX (QR Code)</p></div>
+      <div class="option"><h3>Empresas</h3><p>Seja patrocinador e ganhe o selo "Empresa Guardiã da Fauna"</p></div>
+      <div class="option"><h3>Voluntário</h3><p>Doe seu tempo ou talento</p></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Projetos Felinos da Cuesta</p>
+    <div class="redes-sociais">
+      <a href="https://www.instagram.com/felinosdacuesta/">Instagram</a> 
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
